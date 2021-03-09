@@ -20,10 +20,10 @@ unzip the dataset under `./datasets/` folder.
 python train.py\
     --name chair\
     --category chair\
-    --niter 2000 \
-    --niter_decay 2000 \
-    --save_epoch_freq 100 \
-    --random_elevation \
+    --niter 2000\
+    --niter_decay 2000\
+    --save_epoch_freq 100\
+    --random_elevation\
     --lr 1e-4
 ```
 If you don't want to view the real-time results, you can add command `--display_id 0`
@@ -32,7 +32,14 @@ If you want to view training results and loss plots, run `python -m visdom.serve
 
 # Testing
 Download our pre-trained model from our [Google Drive](https://drive.google.com/file/d/1xRTCSfNb40oRT6QMfchOIlh9QFIpkUmc/view?usp=sharing)
-
+To evaluate the performance, run 
+```
+python eval.py\
+    --name chair\
+    --category chair\
+    --checkpoints_dir checkpoints\ 
+    --which_epoch best
+```
 
 # Acknowledgments
 The code is based on the source code of the paper:
