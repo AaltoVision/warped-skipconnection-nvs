@@ -18,7 +18,7 @@ dataset = data_loader.load_data()
 
 
 opt_for_eval = copy.deepcopy(opt)
-opt_for_eval.isTraom=False
+opt_for_eval.isTrain = False
 opt_for_eval.max_dataset_size = 1000
 val_loader = CustomDatasetDataLoader(opt_for_eval)
 valset = val_loader.load_data()
