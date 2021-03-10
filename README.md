@@ -15,6 +15,8 @@ Code for paper [Novel View Synthesis via Depth-guided Skip Connections](https://
 Download the dataset from the [Google Drive](https://drive.google.com/drive/folders/1YbgU-JOXYsGi7yTrYb1F3niXj6nZp4Li) provided by [1] and 
 unzip the dataset under `./datasets/` folder.
 
+Download the evaluation list files from the [Google Drive](https://drive.google.com/drive/folders/1JmyCvT7pvtZ3k7aOoVnLcTetwgi-vWM-?usp=sharing). Put the corresponding file under corresponding dataset folder. E.g. `./datasets/dataset_kitti/eval_kitti.txt`.
+
 # Training
 ```
 python train.py\
